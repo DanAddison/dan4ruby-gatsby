@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components"
-import { breakpoints, fonts } from "../utilities"
 import reset from "styled-reset-advanced"
+import { theme } from './theme';
 
 export const GlobalStyle = createGlobalStyle`
   /* css reset https://github.com/markoradak/styled-reset-advanced */
@@ -8,10 +8,10 @@ export const GlobalStyle = createGlobalStyle`
 
   /* my global styles */
   body {
-    font-family: ${fonts.body_font};
+    /* font-family: ${theme.body_font}; */
   }
   h1, h2, h3, h4, h5, h6 {
-    font-family: ${fonts.feature_font};
+    /* font-family: ${theme.feature_font}; */
     font-weight: bold;
     margin-top: 0;
     margin-bottom: 1em;
@@ -22,7 +22,7 @@ export const GlobalStyle = createGlobalStyle`
   h4 { font-size: 1.5rem; }
   h5 { font-size: 1.25rem; }
   h6 { font-size: 1rem; }
-  @media (min-width: ${breakpoints.sidenav}) {
+  @media (min-width: ${theme.breakpoints[2]}) {
     h1 { font-size: 3.25rem; }
     h2 { font-size: 2.75rem; }
     h3 { font-size: 2.25rem; }

@@ -1,19 +1,17 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
+import { Link } from "gatsby"
 import styled from "styled-components"
-import { colors, breakpoints } from "../utilities"
+import { color, layout } from 'styled-system'
 
 const HeaderOuter = styled.header`
   position: absolute;
-  width: ${breakpoints.sidenavWidth};
-  left: -${breakpoints.sidenavWidth};
   top: 0;
   bottom: 0;
   z-index: 100;
-  color: ${colors.white};
+  color: ${props => props.theme.white};
+  ${layout}
 
-  @media (min-width: ${breakpoints.sidenav}) {
+  @media (min-width: ${props => props.theme.sidenav}) {
     left: 0;
   }
 `
@@ -25,49 +23,26 @@ const HeaderInner = styled.div`
   padding: 2rem;
   display: flex;
   height: 100%;
+  ${color}
 `
 
-const SiteNav = styled.nav`
+const MainNav = styled.nav`
   margin-left: auto;
   text-align: right;
   margin-right: -1rem;
   font-size: 1.25rem;
 
-  ul {
-    display: flex;
-
-    li {
-      padding: 0 1em;
-
-      a:hover {
-        background-color: #f6ae2d;
-      }
-    }
-  }
-
-  @media (min-width: ${breakpoints.sidenav}) {
+  @media (min-width: ${props => props.theme.sidenav}) {
     margin-left: 0;
     text-align: left;
     margin-top: 2em;
-
-    ul {
-      display: block;
-
-      li {
-        padding: 0.5em 0;
-
-        a {
-          padding-right: 1rem;
-        }
-      }
-    }
   }
 `
 
 const Credits = styled.div`
   display: none;
 
-  @media (min-width: ${breakpoints.sidenav}) {
+  @media (min-width: ${props => props.theme.sidenav}) {
     display: block;
     margin-top: auto;
 
@@ -77,10 +52,10 @@ const Credits = styled.div`
   }
 `
 
-const Header = ({ siteTitle, menuLinks }) => (
-  <HeaderOuter>
-    <HeaderInner>
-      <SiteNav>
+const Sidebar = ({menuLinks}) => (
+  <HeaderOuter width={['200px','500px']}>
+    <HeaderInner bg={'primary'}>
+      <MainNav>
         <ul>
           {menuLinks.map(link => (
             <li key={link.name}>
@@ -88,7 +63,7 @@ const Header = ({ siteTitle, menuLinks }) => (
             </li>
           ))}
         </ul>
-      </SiteNav>
+      </MainNav>
       <Credits>
         <p>© {new Date().getFullYear()} Ruby & <a href="https://danaddisoncreative.com">Dan Addison</a></p>
       </Credits>
@@ -96,12 +71,5 @@ const Header = ({ siteTitle, menuLinks }) => (
   </HeaderOuter>
 )
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
 
-Header.defaultProps = {
-  siteTitle: ``,
-}
-
-export default Header
+export default Sidebar

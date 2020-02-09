@@ -8,16 +8,15 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import Header from "./header"
-import Footer from "./footer"
-import { GlobalStyle } from "../theme/globalStyle"
 import styled from "styled-components"
+import { ThemeProvider } from 'styled-components';
+import { GlobalStyle } from "../theme/globalStyle"
+import { theme } from '../theme/theme';
+import Sidebar from "./sidebar"
 import { FaBars } from "react-icons/fa"
-import { colors } from "../utilities"
 
 const ContentWrapper = styled.div`
   min-height: 100vh;
-  background-color: ${colors.background};
 `
 
 const Hamburger = styled(FaBars)`
@@ -31,10 +30,9 @@ const Hamburger = styled(FaBars)`
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
+    query SiteNavQuery {
       site {
         siteMetadata {
-          title
           menuLinks {
             name
             link
@@ -45,18 +43,18 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
-      <GlobalStyle />
-      <Header
-        menuLinks={data.site.siteMetadata.menuLinks}
-        siteTitle={data.site.siteMetadata.title}
-      />
-      <Hamburger />
-      <ContentWrapper>
-        <main>{children}</main>
-      </ContentWrapper>
-      <Footer />
-    </>
+    <ThemeProvider theme={theme}>
+      <>
+        <GlobalStyle />
+        <Sidebar
+          menuLinks={data.site.siteMetadata.menuLinks}
+        />
+        <Hamburger />
+        <ContentWrapper>
+          <main>{children}</main>
+        </ContentWrapper>
+      </>
+    </ThemeProvider>
   )
 }
 
