@@ -6,8 +6,10 @@ import { color, layout, space, typography, flexbox } from 'styled-system'
 const Wrapper = styled.header`
   position: absolute;
   top: 0;
-  bottom: 0;
+  left: 0;
+  height: 100vh;
   z-index: 100;
+  transition: transform 0.3s ease-in-out;
   ${layout}
   ${color}
   ${space}
@@ -18,6 +20,10 @@ const Navigation = styled.nav`
   ${color}
   ${space}
   ${typography}
+
+  li {
+    padding-bottom: .5em;
+  }
 `
 
 const Credits = styled.div`
@@ -27,9 +33,9 @@ const Credits = styled.div`
 `
 
 const Sidebar = ({menuLinks}) => (
-  <Wrapper display={'flex'} flexDirection='column' width={['150px','200px']} bg={'primary'} p={4}>
+  <Wrapper display={'flex'} flexDirection='column' width={['150px','200px']} bg={'rgba(0, 0, 0, 0.7)'} p={4}>
 
-    <Navigation color={'white'} mt={4} fontSize={[2,2,3]}>
+    <Navigation color={'white'} mt={5} fontSize={[2,2,3]}>
       <ul>
         {menuLinks.map(link => (
           <li key={link.name}>

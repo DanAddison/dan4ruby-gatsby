@@ -17,7 +17,7 @@ breakpoints.xl = breakpoints[3]
  * Grey: Colors for items that are not that important
  */
 const colors = {
-  pageBackground: 'hsl(228, 33%, 97%)',
+  pageBackground: '#fffff1',
   white: 'hsl(0, 0%, 100%)',
   black: 'hsl(0, 0%, 0%)',
   primary: {
@@ -68,11 +68,12 @@ const fontSizes = [
   '16px',
   '20px',
   '24px',
-  '32px',
-  '48px',
-  '64px',
-  '96px',
-  '128px',
+  '30px',
+  '36px',
+  '44px',
+  '52px',
+  '62px',
+  '74px',
 ]
 
 const lineHeights = [1, 1.125, 1.25, 1.5]

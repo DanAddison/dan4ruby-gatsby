@@ -12,21 +12,23 @@ import styled from "styled-components"
 import { ThemeProvider } from 'styled-components';
 import { GlobalStyle } from "../theme/globalStyle"
 import { theme } from '../theme/theme';
-import Sidebar from "./sidebar"
-import { FaBars } from "react-icons/fa"
+import { Sidebar, Burger } from "../components"
+
+// import { FaBars } from "react-icons/fa"
+
+// const Hamburger = styled(FaBars)`
+//   color: white;
+//   position: absolute;
+//   top: 1em;
+//   left: 1em;
+//   font-size: 1.5rem;
+//   z-index: 200;
+// `
 
 const ContentWrapper = styled.div`
   min-height: 100vh;
 `
 
-const Hamburger = styled(FaBars)`
-  color: white;
-  position: absolute;
-  top: 1em;
-  left: 1em;
-  font-size: 1.5rem;
-  z-index: 200;
-`
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -46,10 +48,10 @@ const Layout = ({ children }) => {
     <ThemeProvider theme={theme}>
       <>
         <GlobalStyle />
+        <Burger />
         <Sidebar
           menuLinks={data.site.siteMetadata.menuLinks}
         />
-        <Hamburger />
         <ContentWrapper>
           <main>{children}</main>
         </ContentWrapper>

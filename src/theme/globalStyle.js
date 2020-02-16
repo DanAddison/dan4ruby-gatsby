@@ -8,30 +8,39 @@ export const GlobalStyle = createGlobalStyle`
 
   /* my global styles */
   body {
-    /* font-family: ${theme.body_font}; */
+    background-color: ${theme.colors.pageBackground};
+    font-family: 'Questrial';
   }
-  h1, h2, h3, h4, h5, h6 {
-    /* font-family: ${theme.feature_font}; */
+  h1, h2, h3 {
+    line-height: ${theme.lineHeights[1]};
+    
     font-weight: bold;
-    margin-top: 0;
-    margin-bottom: 1em;
+    margin-top: .5em;
+    margin-bottom: .5em;
   }
-  h1 { font-size: 2.5rem; }
-  h2 { font-size: 2.0rem; }
-  h3 { font-size: 1.75rem; }
-  h4 { font-size: 1.5rem; }
-  h5 { font-size: 1.25rem; }
-  h6 { font-size: 1rem; }
+  h4, h5, h6 {
+    line-height: ${theme.lineHeights[2]};
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  h1 { font-size: ${theme.fontSizes[7]}; }
+  h2 { font-size: ${theme.fontSizes[5]}; }
+  h3 { font-size: ${theme.fontSizes[4]}; }
+  h4 { font-size: ${theme.fontSizes[3]}; }
+  h5 { font-size: ${theme.fontSizes[2]}; }
+  h6 { font-size: ${theme.fontSizes[1]}; }
   @media (min-width: ${theme.breakpoints[2]}) {
-    h1 { font-size: 3.25rem; }
-    h2 { font-size: 2.75rem; }
-    h3 { font-size: 2.25rem; }
-    h4 { font-size: 2.0rem; }
-    h5 { font-size: 1.75rem; }
-    h6 { font-size: 1.25rem; }
+    h1 { font-size: ${theme.fontSizes[8]}; }
+    h2 { font-size: ${theme.fontSizes[6]}; }
+    h3 { font-size: ${theme.fontSizes[5]}; }
+    h4 { font-size: ${theme.fontSizes[4]}; }
+    h5 { font-size: ${theme.fontSizes[3]}; }
+    h6 { font-size: ${theme.fontSizes[2]}; }
   }
   p {
-    line-height: 1.25;
+    line-height: ${theme.lineHeights[2]};
+    margin-bottom: 1rem;
   }
   ul {
     margin: 0 auto;
