@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="src/images/Ellis.png" width="120" />
+    <img alt="Gatsby" src="src/images/DanRubyFavicon.png" width="120" />
   </a>
 </p>
 <h1 align="center">
