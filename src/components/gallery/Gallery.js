@@ -1,21 +1,7 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-import styled from "styled-components"
-
-const GalleryWrapper = styled.div`
-  padding: 1em;
-  display: flex;
-  flex-wrap: wrap;
-  /* now override flexbox fallback with grid for supporting browsers */
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  grid-gap: 1rem;
-`
-
-const GalleryImage = styled.div`
-  min-width: 400px;
-`
+import { GalleryWrapper, GalleryImage } from './Gallery.styled';
 
 const Gallery = () => (
   <StaticQuery

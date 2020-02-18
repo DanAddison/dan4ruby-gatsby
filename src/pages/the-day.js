@@ -1,14 +1,10 @@
 import React from "react"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import { Layout, SEO } from "../components"
 import styled from "styled-components"
 import { color } from 'styled-system'
 
 const ContentWrapper = styled.div`
-  padding: calc(1em + 5vw);
   max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
 `
 
 const Question = styled.h4`
@@ -53,7 +49,8 @@ const SecondPage = () => (
 
       <Question color={'primary.900'}>Am I supposed to give you guys a gift?</Question>
       <Answer>No!</Answer>
-      <p>We've been encouraging donations to Strange Cargo, to thank them for their hospitality and help them to keep up all the great community work. You can do that on the <a href="/gifting">gifting page ></a>. We've now bowed to overwhelming pressure and added an extra option for donating straight to our honeymoon spending budget, too. You're too kind!</p>
+      <p>We've been encouraging donations to Strange Cargo, to thank them for their hospitality and help them to keep up all the great community work. You can do that on the <a href="/gifting">gifting page ></a></p>
+      <p>We have reluctantly (a lie) now bowed to overwhelming pressure and added an extra option for donating straight us, too. So if you feel a burning desire to help flesh out our honeymoon spending budget, you can. You crazy guys.</p>
 
       <Question>Are we all going to fit inside the factory?</Question>
       <Answer>Good question.</Answer>

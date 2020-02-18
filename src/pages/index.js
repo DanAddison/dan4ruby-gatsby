@@ -1,7 +1,5 @@
 import React from "react"
-import SEO from "../components/seo"
-import Layout from "../components/layout"
-import Splashpage from "../components/background-image"
+import { Layout, SEO, Splashpage } from "../components"
 
 
 const IndexPage = () => (

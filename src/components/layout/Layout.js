@@ -10,12 +10,12 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 import { ThemeProvider } from 'styled-components';
-import { GlobalStyle } from "../theme/globalStyle"
-import { theme } from '../theme/theme';
-import { Sidebar, Burger } from "../components"
+import { GlobalStyle } from "../../theme/globalStyle"
+import { theme } from '../../theme/theme';
+import { Sidebar, Burger } from ".."
 
+// here's how to use a react icon:
 // import { FaBars } from "react-icons/fa"
-
 // const Hamburger = styled(FaBars)`
 //   color: white;
 //   position: absolute;
@@ -27,8 +27,11 @@ import { Sidebar, Burger } from "../components"
 
 const ContentWrapper = styled.div`
   min-height: 100vh;
+  padding: 2em 1em;
+  max-width: 2000px;
+  margin-left: auto;
+  margin-right: auto;
 `
-
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
