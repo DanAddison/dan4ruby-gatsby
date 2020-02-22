@@ -1,9 +1,11 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from "react";
+import { bool } from 'prop-types';
+import { Link } from "gatsby";
 import { SidebarWrapper, Navigation, Credits } from './Sidebar.styled';
 
-const Sidebar = ({menuLinks}) => (
-  <SidebarWrapper display={'flex'} flexDirection='column' width={['150px','200px']} bg={'rgba(0, 0, 0, 0.7)'} p={4}>
+const Sidebar = ({menuLinks, open}) => (
+
+  <SidebarWrapper open={open} display={'flex'} flexDirection='column' width={[1, 1/2, 1/3, 1/4]} bg={'rgba(0, 0, 0, 0.85)'} p={4}>
 
     <Navigation color={'white'} mt={5} fontSize={[2,2,3]}>
       <ul>
@@ -22,5 +24,9 @@ const Sidebar = ({menuLinks}) => (
   </SidebarWrapper>
 )
 
+// type checking
+Sidebar.propTypes = {
+  open: bool.isRequired,
+}
 
 export default Sidebar

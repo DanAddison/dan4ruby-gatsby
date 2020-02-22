@@ -8,7 +8,7 @@ export const GlobalStyle = createGlobalStyle`
 
   /* my global styles */
   body {
-    background-color: ${theme.colors.pageBackground};
+    background: ${theme.colors.pageBackground};
     font-family: 'Questrial';
   }
   h1, h2, h3 {

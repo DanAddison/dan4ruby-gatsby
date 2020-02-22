@@ -13,6 +13,14 @@ module.exports = {
         link: "/the-day",
       },
       {
+        name: "RSVP",
+        link: "/rsvp",
+      },
+      {
+        name: "gifting",
+        link: "/gifting",
+      },
+      {
         name: "gallery",
         link: "/gallery",
       },
