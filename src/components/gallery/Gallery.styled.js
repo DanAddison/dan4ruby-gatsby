@@ -12,5 +12,5 @@ export const GalleryWrapper = styled.div`
 `
 
 export const GalleryImage = styled.div`
-  min-width: 400px;
+  min-width: 100%;
 `;

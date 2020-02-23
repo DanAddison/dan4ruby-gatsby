@@ -17,13 +17,13 @@ breakpoints.xl = breakpoints[3]
  * Grey: Colors for items that are not that important
  */
 const colors = {
-  pageBackground: '#f8f8f9',
+  pageBackground: 'radial-gradient(circle at 69% 86%, rgba(165, 165, 165,0.06) 0%, rgba(165, 165, 165,0.06) 25%,rgba(193, 193, 193,0.06) 25%, rgba(193, 193, 193,0.06) 50%,rgba(221, 221, 221,0.06) 50%, rgba(221, 221, 221,0.06) 75%,rgba(249, 249, 249,0.06) 75%, rgba(249, 249, 249,0.06) 100%),radial-gradient(circle at 49% 76%, rgba(129, 129, 129,0.06) 0%, rgba(129, 129, 129,0.06) 25%,rgba(164, 164, 164,0.06) 25%, rgba(164, 164, 164,0.06) 50%,rgba(200, 200, 200,0.06) 50%, rgba(200, 200, 200,0.06) 75%,rgba(235, 235, 235,0.06) 75%, rgba(235, 235, 235,0.06) 100%),radial-gradient(circle at 22% 64%, rgba(173, 173, 173,0.06) 0%, rgba(173, 173, 173,0.06) 25%,rgba(119, 119, 119,0.06) 25%, rgba(119, 119, 119,0.06) 50%,rgba(64, 64, 64,0.06) 50%, rgba(64, 64, 64,0.06) 75%,rgba(10, 10, 10,0.06) 75%, rgba(10, 10, 10,0.06) 100%),linear-gradient(307deg, rgb(255,255,255),rgb(255,255,255))',
   white: 'hsl(0, 0%, 100%)',
   black: 'hsl(0, 0%, 0%)',
   primary: {
-    100: 'hsl(223, 88%, 97%)',
-    200: 'hsl(223, 72%, 90%)',
-    300: 'hsl(223, 71%, 76%)',
+    100: '#001f3f',
+    200: '#0b8457',
+    300: '#ff304f',
     400: 'hsl(227, 63%, 67%)',
     500: 'hsl(230, 65%, 63%)',
     600: 'hsl(230, 52%, 53%)',
@@ -47,17 +47,19 @@ const colors = {
 /**
  * Space is used for margin and padding scales.
  * It's recommended to use powers of two to ensure alignment across the entire project
+ * I'm not down with that though so I've added a couple of in-between values
  */
 const space = [
   '0',
   '4px',
   '8px',
   '16px',
+  '24px',
   '32px',
+  '48px',
   '64px',
   '128px',
   '256px',
-  '512px',
 ]
 
 /**
@@ -66,14 +68,15 @@ const space = [
 const fontSizes = [
   '14px',
   '16px',
+  '18px',
   '20px',
   '24px',
   '30px',
   '36px',
-  '44px',
-  '52px',
-  '62px',
-  '74px',
+  '42px',
+  '50px',
+  '58px',
+  '68px',
 ]
 
 const lineHeights = [1, 1.125, 1.25, 1.5]
