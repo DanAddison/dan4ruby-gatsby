@@ -28,6 +28,6 @@ export const MainMenu = styled.ul`
   ${space}
   
   li {
-    padding-bottom: .5em;
+    padding-bottom: .75em;
   }
 `

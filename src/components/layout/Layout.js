@@ -13,7 +13,6 @@ import styled, { ThemeProvider } from 'styled-components'
 import { GlobalStyle } from "../../theme/globalStyle"
 import { theme } from "../../theme/theme"
 import { Sidebar, Burger } from "../../components"
-import { space } from 'styled-system'
 
 const SiteHeader = styled.header`
   position: fixed;
@@ -21,6 +20,7 @@ const SiteHeader = styled.header`
   top: 0;
   left: 0;
   padding: 1rem;
+  z-index: 10;
 
   @media (max-width: ${theme.breakpoints[1]}) {
     background-color: rgba(255,255,255,.7);
@@ -32,11 +32,6 @@ const SiteHeader = styled.header`
     text-align: right;
   }
 `
-const Credits = styled.div`
-  position: absolute;
-  bottom: 0;
-  right: 1rem;
-`
 
 const NavigationWrapper = styled.div`
   position: fixed;
@@ -44,12 +39,10 @@ const NavigationWrapper = styled.div`
   z-index: 10;
 `
 const ContentWrapper = styled.div`
-  position: relative;
   min-height: 100vh;
   max-width: 2000px;
   margin-left: auto;
   margin-right: auto;
-  ${space}
 `
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -84,11 +77,8 @@ const Layout = ({ children }) => {
             menuLinks={data.site.siteMetadata.menuLinks}
           />
         </NavigationWrapper>
-        <ContentWrapper pt={[5, 5, 5]}>
+        <ContentWrapper>
           <main>{children}</main>
-            <Credits>
-              <p>© {new Date().getFullYear()} Ruby & <a href="https://danaddisoncreative.com">Dan Addison</a></p>
-            </Credits>
         </ContentWrapper>
       </>
     </ThemeProvider>

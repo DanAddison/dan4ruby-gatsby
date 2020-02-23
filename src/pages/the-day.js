@@ -96,7 +96,6 @@ const SecondPage = () => (
 
     </Article>
 
-
   </Layout>
 )
 

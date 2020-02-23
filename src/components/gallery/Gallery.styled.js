@@ -2,7 +2,7 @@
 import styled from "styled-components"
 
 export const GalleryWrapper = styled.div`
-  padding: 1em;
+  padding: 2em 1em;
   display: flex;
   flex-wrap: wrap;
   /* now override flexbox fallback with grid for supporting browsers */
@@ -12,5 +12,6 @@ export const GalleryWrapper = styled.div`
 `
 
 export const GalleryImage = styled.div`
-  min-width: 100%;
+  width: 100%;
+  max-width: 600px;
 `;

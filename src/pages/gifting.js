@@ -5,6 +5,7 @@ import styled from 'styled-components';
 const StyledPaypal = styled.form`
     position: relative;
     display: inline-block;
+    margin-bottom: 2em;
     overflow: hidden;
     border-radius: 5px;
     padding: .7em 1.4em;
@@ -33,6 +34,7 @@ const GiftingPage = () => (
     <SEO title="Gifting" description="Well, if you must!" />
     <Article>
       <Heading mt={0}>Gifting</Heading>
+      <h2>For Strange Cargo</h2>
       <p>We are encouraging donations to Strange Cargo, to thank them for their hospitality and help them to keep up all the great community work.</p>
 
       <StyledPaypal action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -43,7 +45,8 @@ const GiftingPage = () => (
         <span>Donate</span>
       </StyledPaypal>
 
-      <p>Some of you lovely lot seem to have a burning desire to help shore up our honeymoon spending budget too. Well, if you <em>really</em> must...</p>
+      <h2>For Ruby & Dan</h2>
+      <p>A few of you lovely lot seem really keen to help us with our honeymoon spending budget, too! Who are we to deny you that opportunity?</p>
 
       <StyledPaypal action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" className="styled_paypal">
         <input type="hidden" name="cmd" value="_donations" />
