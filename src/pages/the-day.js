@@ -34,6 +34,10 @@ const AnswerBody = styled.div`
     color: ${props => props.theme.colors.primary['200']};
   }
 
+  a {
+    text-decoration: underline;
+  }
+
   @media (min-width: ${props => props.theme.breakpoints[1]}) {
     margin-left: 2em;
   }

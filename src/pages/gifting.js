@@ -13,10 +13,11 @@ const StyledPaypal = styled.form`
     font-weight: 400;
     letter-spacing: .15em;
     text-transform: uppercase;
-    background: ${props => props.theme.colors.primary['100']};
+    transition: all .2s;
+    background: ${props => props.theme.colors.secondary};
     color: ${props => props.theme.colors.white};
     &:hover {
-      background: ${props => props.theme.colors.primary['200']};
+      background: ${props => props.theme.colors.primary['2']};
     }
     input {
       position: absolute;
@@ -46,7 +47,7 @@ const GiftingPage = () => (
       </StyledPaypal>
 
       <h2>For Ruby & Dan</h2>
-      <p>A few of you lovely lot seem really keen to help us with our honeymoon spending budget, too! Who are we to deny you that opportunity?</p>
+      <p>A few of you lovely lot seem really keen to help us with our honeymoon spending budget, too! Who are we to deny you the opportunity to buy us a drink in Slovenia?</p>
 
       <StyledPaypal action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" className="styled_paypal">
         <input type="hidden" name="cmd" value="_donations" />

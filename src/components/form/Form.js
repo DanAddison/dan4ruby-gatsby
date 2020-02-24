@@ -45,14 +45,14 @@ const Form = styled.form`
     letter-spacing: 0.1em;
     text-decoration: none;
     white-space: nowrap;
-    background: black;
+    background: ${props => props.theme.colors.secondary};
     border-radius: 4px;
     cursor: pointer;
     box-sizing: border-box;
     transition: all 0.2s;
 
     :hover {
-      background: blue;
+      background: ${props => props.theme.colors.primary[2]};
     }
   }
 `

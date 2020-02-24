@@ -54,6 +54,37 @@ export const GlobalStyle = createGlobalStyle`
   em {
     font-style: italic;
   }
+  a {
+    color: $color__body;
+    position: relative;
+    z-index: 1;
+    
+    &::before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: -5px;
+      bottom: -5px;
+      left: -0.25em;
+      right: -0.25em;
+      background-color: ${theme.colors.primary[2]};
+      transform-origin: center right;
+      transform: scaleX(0);
+      transition: transform 0.2s ease-in-out;
+    }
+    
+    &:hover::before {
+      transform: scaleX(1);
+      transform-origin: center left;
+    }
+    &:focus {
+      outline: thin dotted;
+    }
+    &:hover,
+    &:active {
+      outline: 0;
+    }
+  }
   .visuallyHidden {
       opacity: 0;
       position: absolute;
