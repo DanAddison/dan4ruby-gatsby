@@ -9,7 +9,7 @@ export const GlobalStyle = createGlobalStyle`
   /* my global styles */
   body {
     background: ${theme.colors.pageBackground};
-    font-family: 'Questrial';
+    font-family: 'Lora';
   }
   h1, h2, h3 {
     line-height: ${theme.lineHeights[1]};
@@ -51,11 +51,17 @@ export const GlobalStyle = createGlobalStyle`
       font-size: ${theme.fontSizes[2]};
     }
   }
+  li {
+    padding-bottom: .5em;
+  }
   em {
     font-style: italic;
   }
   a {
-    color: $color__body;
+    text-decoration: underline;
+  }
+  a.fancylink {
+    text-decoration: none;
     position: relative;
     z-index: 1;
     
@@ -83,6 +89,26 @@ export const GlobalStyle = createGlobalStyle`
     &:hover,
     &:active {
       outline: 0;
+    }
+  }
+  .btn {
+    display: inline-block;
+    padding: .7em 1.4em;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    background: ${theme.colors.primary['1']};
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: all 0.2s;
+
+    :hover {
+      background: ${theme.colors.primary[2]};
     }
   }
   .visuallyHidden {

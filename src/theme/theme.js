@@ -21,11 +21,11 @@ const colors = {
   white: 'hsl(0, 0%, 100%)',
   black: 'hsl(0, 0%, 0%)',
   primary: {
-    1: '#EBBD1C',
-    2: '#8C3D3D',
-    3: '#E2785D',
+    1: '#07617d',
+    2: '#f9a828',
+    3: '#574b90',
   },
-  secondary: '#1A1521',
+  secondary: '#843b62',
   grey: {
     100: 'hsl(210, 17%, 98%)',
     200: 'hsl(207, 22%, 90%)',

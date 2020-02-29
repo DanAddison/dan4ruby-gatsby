@@ -1,5 +1,5 @@
 import React from "react"
-import { Layout, SEO, Article, Heading } from "../components"
+import { Layout, Article, Heading } from "../components"
 import styled from "styled-components"
 
 const List = styled.ul`
@@ -8,9 +8,10 @@ const List = styled.ul`
 `
 
 const Question = styled.h2`
-  margin-bottom: .25em;
+  margin-bottom: .5em;
   margin-top: 1em;
-  font-size: ${props => props.theme.fontSizes[3]};
+  font-size: ${props => props.theme.fontSizes[4]};
+  color: ${props => props.theme.colors.primary['1']};
   /* font-weight: normal; */
   ::before {
     content: 'Q.';
@@ -19,10 +20,10 @@ const Question = styled.h2`
   } 
 `
 const Answer = styled.p`
-  margin: .25em 0;
+  margin: .5em 0;
   font-size: ${props => props.theme.fontSizes[3]}; 
   font-weight: bold;
-  color: ${props => props.theme.colors.primary['200']};
+  /* color: ${props => props.theme.colors.primary['2']}; */
   ::before {
     content: 'A.';
     padding-right: 1em;
@@ -30,12 +31,10 @@ const Answer = styled.p`
   } 
 `
 const AnswerBody = styled.div`
+margin-bottom: 2em;
   span {
-    color: ${props => props.theme.colors.primary['200']};
-  }
-
-  a {
-    text-decoration: underline;
+    color: ${props => props.theme.colors.primary['1']};
+    font-weight: bold;
   }
 
   @media (min-width: ${props => props.theme.breakpoints[1]}) {
@@ -45,7 +44,6 @@ const AnswerBody = styled.div`
 
 const SecondPage = () => (
   <Layout>
-    <SEO title="The Day" />
     <Article>
       <Heading>The Day</Heading>
 
@@ -53,6 +51,7 @@ const SecondPage = () => (
       <Answer>The Factory</Answer>
       <AnswerBody>
         <p><a href="http://www.strangecargo.org.uk/">Strange Cargo</a> means a lot to both of us, so we’re thrilled to bits to be saying our vows there. Huge thanks to Brigitte for giving us free rein!</p>
+        <p><a href="https://goo.gl/maps/r271nrvBTeWq8SAq7">View map</a></p>
       </AnswerBody>
 
       <Question>Can I park there?</Question>
@@ -76,7 +75,7 @@ const SecondPage = () => (
       <Question>What's the dress code?</Question>
       <Answer>Anything you like</Answer>
       <AnswerBody>
-        <p>But hey, it's a wedding so you might fancy the opportunity to dress up posh... we do have a fancy photographer ater all.</p>
+        <p>But hey, it's a wedding so you might fancy the opportunity to dress up posh... we do have a fancy photographer after all.</p>
       </AnswerBody>
 
       <Question>What's for tea?</Question>

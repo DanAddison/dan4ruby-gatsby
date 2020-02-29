@@ -69,7 +69,7 @@ const Layout = ({ children }) => {
       <>
         <GlobalStyle />
         <SiteHeader>
-          <h1><Link to={"/"}>Ruby & Dan</Link></h1>
+          <h1><Link to={"/"} className="fancylink">Ruby & Dan</Link></h1>
         </SiteHeader>
         <NavigationWrapper ref={node}>
           <Burger open={open} setOpen={setOpen} />

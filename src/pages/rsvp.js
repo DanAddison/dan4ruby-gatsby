@@ -1,9 +1,8 @@
 import React from "react"
-import { Layout, SEO, Article, Form } from "../components"
+import { Layout, Article, Form } from "../components"
 
 const RSVPPage = () => (
   <Layout>
-    <SEO title="RSVP" />
     <Article>
       <h1>RSVP</h1>
       <p>If you haven't yet completed this form to officially confirm whether we can expect you, please do so lickety-split.</p>
@@ -42,8 +41,12 @@ const RSVPPage = () => (
         <div className="form__element">
           <textarea type="text" name="message" placeholder="If there's anything else you'd like to add, speak now or forever blah blah blah" rows="6"></textarea>
         </div>
-        <button type="submit">Send</button>
+        <button className="btn" type="submit">Send</button>
       </Form>
+
+      <p>And don't forget to do this other thing for our amusement:</p>
+      <a className="btn" href="https://danieladdison.typeform.com/to/R9aYXt" target="_blank" rel="noopener noreferrer">Take our survey</a>
+
     </Article>
   </Layout>
 )

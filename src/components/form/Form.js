@@ -3,6 +3,7 @@ import styled from 'styled-components'
 const Form = styled.form`
   max-width: 100%;
   margin-top: 4em;
+  margin-bottom: 4em;
 
   .form__element {
     margin-bottom: 1em;
@@ -33,27 +34,6 @@ const Form = styled.form`
 
   textarea {
     min-height: 5em;
-  }
-
-  button {
-    display: block;
-    height: 2em;
-    padding: 0 1em;
-    color: white;
-    text-align: center;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    text-decoration: none;
-    white-space: nowrap;
-    background: ${props => props.theme.colors.secondary};
-    border-radius: 4px;
-    cursor: pointer;
-    box-sizing: border-box;
-    transition: all 0.2s;
-
-    :hover {
-      background: ${props => props.theme.colors.primary[2]};
-    }
   }
 `
 

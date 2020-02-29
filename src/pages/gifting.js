@@ -1,5 +1,5 @@
 import React from "react"
-import { Layout, SEO, Article, Heading } from "../components"
+import { Layout, Article, Heading } from "../components"
 import styled from 'styled-components';
 
 const StyledPaypal = styled.form`
@@ -14,7 +14,7 @@ const StyledPaypal = styled.form`
     letter-spacing: .15em;
     text-transform: uppercase;
     transition: all .2s;
-    background: ${props => props.theme.colors.secondary};
+    background: ${props => props.theme.colors.primary['1']};
     color: ${props => props.theme.colors.white};
     &:hover {
       background: ${props => props.theme.colors.primary['2']};
@@ -34,7 +34,6 @@ const StyledPaypal = styled.form`
 
 const GiftingPage = () => (
   <Layout>
-    <SEO title="Gifting" description="Well, if you must!" />
     <Article>
       <Heading mt={0}>Gifting</Heading>
       <h2>For Strange Cargo</h2>
@@ -53,8 +52,8 @@ const GiftingPage = () => (
 
       <StyledPaypal action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" className="styled_paypal">
         <input type="hidden" name="cmd" value="_donations" />
-        <input type="hidden" name="business" value="G2R68UJDM3NFN" />
-        <input type="hidden" name="item_name" value="Honeymoon Fund" />
+        <input type="hidden" name="business" value="rubybolton28@gmail.com" />
+        <input type="hidden" name="item_name" value="Our honeymoon fund" />
         <input type="hidden" name="currency_code" value="GBP" />
         <input type="image" src="" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
         <span>Donate</span>
