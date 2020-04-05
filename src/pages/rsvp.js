@@ -5,10 +5,10 @@ const RSVPPage = () => (
   <Layout>
     <Article>
       <h1>RSVP</h1>
-      <p>If you haven't yet completed this form to officially confirm whether we can expect you, please do so lickety-split.</p>
+      <p>If you haven't yet completed this form since we rescheduled from 2020 to 2021, please do so!</p>
 
       <Form
-        name="rsvp"
+        name="rsvp_2021"
         method="POST"
         netlify-honeypot="bot-field"
         data-netlify="true"
@@ -17,7 +17,7 @@ const RSVPPage = () => (
           <label htmlFor="bot-field">Don’t fill this out if you're human:</label>
           <input name="bot-field" />
         </div>
-        <input type="hidden" name="form-name" value="rsvp" />
+        <input type="hidden" name="form-name" value="rsvp_2021" />
         <div className="form__element">
           <input type="text" name="name" placeholder="Your Name(s)" required="required"/>
         </div>
@@ -26,7 +26,7 @@ const RSVPPage = () => (
         </div>
         <div className="form__element">
           <fieldset>
-            <label htmlFor="attending[]">Will you be joining us?
+            <label htmlFor="attending[]">Will you be joining us on 17/04/2021?
               <select name="attending[]" required="required">
                 <option value="">-- please choose an option --</option>
                 <option value="yes">I will !!</option>
@@ -44,7 +44,7 @@ const RSVPPage = () => (
         <button className="btn" type="submit">Send</button>
       </Form>
 
-      <p>And don't forget to do this other thing for our amusement:</p>
+      <p>And don't forget to do our anonymous survey, just for our amusement. Already done it? Do it again!</p>
       <a className="btn" href="https://danieladdison.typeform.com/to/R9aYXt" target="_blank" rel="noopener noreferrer">Take our survey</a>
 
     </Article>

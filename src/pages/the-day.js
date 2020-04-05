@@ -1,5 +1,6 @@
 import React from "react"
 import { Layout, Article, Heading } from "../components"
+import {Link} from "gatsby"
 import styled from "styled-components"
 
 const List = styled.ul`
@@ -47,6 +48,21 @@ const SecondPage = () => (
     <Article>
       <Heading>The Day</Heading>
 
+      <Question>When is it?</Question>
+      <Answer>Saturday, April 17th, 2021</Answer>
+      <AnswerBody>
+        <p>Yes, that's right, Coronavirus threw a spanner in the works. We've had to postpone almost a full year, to April 2021.</p>
+        <p>We're just going to have to party even harder!</p>
+      </AnswerBody>
+
+      <Question>Do I need to RSVP again?</Question>
+      <Answer>Yes please!</Answer>
+      <AnswerBody>
+        <p>At some point between now and then, if you could RSVP to confirm your attendence on the new date, that would be grand.</p>
+        <p>What may seem like an unnecessary formality is actually very helpful for us. Head here to respond: <Link to={"rsvp"}>RSVP</Link></p>
+      </AnswerBody>
+
+
       <Question>Where is it?</Question>
       <Answer>The Factory</Answer>
       <AnswerBody>
@@ -63,7 +79,7 @@ const SecondPage = () => (
       <Question>What time is it?</Question>
       <Answer>2pm</Answer>
       <AnswerBody>
-        <p>We think it'll go a little something like this:</p>
+        <p>Keep an eye on this website close to the time, as we'll update it with any details as they become clearer. But we think it'll go a little something like this:</p>
         <List>
           <li>Arrive between 1-1:45pm</li>
           <li>The ceremony will take place at 2pm</li>
