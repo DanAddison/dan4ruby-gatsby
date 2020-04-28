@@ -26,7 +26,7 @@ const RSVPPage = () => (
         </div>
         <div className="form__element">
           <fieldset>
-            <label htmlFor="attending[]">Will you be joining us on 17/04/2021?
+            <label htmlFor="attending[]">Will you be joining us?
               <select name="attending[]" required="required">
                 <option value="">-- please choose an option --</option>
                 <option value="yes">I will !!</option>
