@@ -5,10 +5,10 @@ const RSVPPage = () => (
   <Layout>
     <Article>
       <h1>RSVP</h1>
-      <p>If you haven't yet completed this form since we rescheduled from 2020 to 2021, please do so!</p>
+      <p>If you haven't yet completed this form since we rescheduled to September 2021, please do so!</p>
 
       <Form
-        name="rsvp_2021"
+        name="rsvp_sept_2021"
         method="POST"
         netlify-honeypot="bot-field"
         data-netlify="true"
@@ -17,7 +17,7 @@ const RSVPPage = () => (
           <label htmlFor="bot-field">Don’t fill this out if you're human:</label>
           <input name="bot-field" />
         </div>
-        <input type="hidden" name="form-name" value="rsvp_2021" />
+        <input type="hidden" name="form-name" value="rsvp_sept_2021" />
         <div className="form__element">
           <input type="text" name="name" placeholder="Your Name(s)" required="required"/>
         </div>
@@ -28,24 +28,15 @@ const RSVPPage = () => (
           <fieldset>
             <label htmlFor="attending[]">Will you be joining us?
               <select name="attending[]" required="required">
-                <option value="">-- please choose an option --</option>
+                <option value="">-- select --</option>
                 <option value="yes">I will !!</option>
-                <option value="no">No, I'm holding out for a better proposal</option>
+                <option value="no">No, enough with this wedding already</option>
               </select>
             </label>
           </fieldset>
         </div>
-        <div className="form__element">
-          <textarea type="text" name="dietary" placeholder="Please let us know if you (or anyone in your party) are veggie, vegan, gluten-free etc." rows="6"></textarea>
-        </div>
-        <div className="form__element">
-          <textarea type="text" name="message" placeholder="If there's anything else you'd like to add, speak now or forever blah blah blah" rows="6"></textarea>
-        </div>
         <button className="btn" type="submit">Send</button>
       </Form>
-
-      <p>And don't forget to do our anonymous survey, just for our amusement. Already done it? Do it again!</p>
-      <a className="btn" href="https://danieladdison.typeform.com/to/R9aYXt" target="_blank" rel="noopener noreferrer">Take our survey</a>
 
     </Article>
   </Layout>

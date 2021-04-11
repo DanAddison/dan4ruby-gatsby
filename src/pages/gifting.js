@@ -47,8 +47,8 @@ const GiftingPage = () => (
         <span>Donate</span>
       </StyledPaypal>
 
-      <h2>For Ruby & Dan</h2>
-      <p>A few of you lovely lot seem really keen to help us with our honeymoon spending budget, too! Who are we to deny you the opportunity to buy us a drink in Slovenia?</p>
+      {/* <h2>For Ruby & Dan</h2>
+      <p>We put a button here last year to collect a few quid towards our Slovenian honeymoon that never was. We were going to remove it this time around but hey, if you're generous to a fault, who are we to stop you from buying us a drink!</p>
 
       <StyledPaypal action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" className="styled_paypal">
         <input type="hidden" name="cmd" value="_donations" />
@@ -57,7 +57,7 @@ const GiftingPage = () => (
         <input type="hidden" name="currency_code" value="GBP" />
         <input type="image" src="" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
         <span>Donate</span>
-      </StyledPaypal>
+      </StyledPaypal> */}
 
     </Article>
   </Layout>

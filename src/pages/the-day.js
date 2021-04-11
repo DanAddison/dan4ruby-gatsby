@@ -1,6 +1,6 @@
 import React from "react"
 import { Layout, Article, Heading } from "../components"
-// import {Link} from "gatsby"
+import {Link} from "gatsby"
 import styled from "styled-components"
 
 const List = styled.ul`
@@ -46,21 +46,19 @@ margin-bottom: 2em;
 const SecondPage = () => (
   <Layout>
     <Article>
-      <Heading>The Day</Heading>
+      <Heading>The belated wedding bash</Heading>
 
       <Question>When is it?</Question>
-      <Answer>To be confirmed</Answer>
+      <Answer>Saturday 4th September 2021</Answer>
       <AnswerBody>
-        <p>Yes, that's right, Coronavirus threw a spanner in the works. We've had to postpone until 2021. We're looking at springtime, but we'll try to hold off setting a definite date until it looks completely safe to do so - none of us want to have to reschedule a third time! We'll give you as much notice as possible though.</p>
-        <p>We're just going to have to party even harder!</p>
+        <p>Better late than never.</p>
       </AnswerBody>
 
-      {/* <Question>Do I need to RSVP again?</Question>
+      <Question>Do I need to RSVP again?</Question>
       <Answer>Yes please!</Answer>
       <AnswerBody>
-        <p>At some point between now and then, if you could RSVP to confirm your attendence on the new date, that would be grand.</p>
-        <p>What may seem like an unnecessary formality is actually very helpful for us. Head here to respond: <Link to={"rsvp"}>RSVP</Link></p>
-      </AnswerBody> */}
+        <p>It'll be a casual affair but it is nevertheless very helpful for us to know who is coming in advance. Head here to respond: <Link to={"rsvp"}>RSVP</Link></p>
+      </AnswerBody>
 
       <Question>Where is it?</Question>
       <Answer>The Factory</Answer>
@@ -76,21 +74,21 @@ const SecondPage = () => (
       </AnswerBody>
 
       <Question>What time is it?</Question>
-      <Answer>2pm</Answer>
+      <Answer>2pm maybe?</Answer>
       <AnswerBody>
-        <p>Keep an eye on this website close to the time, as we'll update it with any details as they become clearer. But we think it'll go a little something like this:</p>
+        <p>Keep an eye on this website close to the time, as we'll update it with any details as they become clearer. But you can expect something like this:</p>
         <List>
           <li>Arrive between 1-1:45pm</li>
-          <li>The ceremony will take place at 2pm</li>
-          <li>There will be food from about 3pm</li>
-          <li>Partying will go on until about 11pm</li>
+          <li>Suspend disbelief for our long-awaited wedding ceremony at 2pm</li>
+          <li>Eat and drink and mingle for a few hours</li>
+          <li>Have a boogie until 11pm</li>
         </List>
       </AnswerBody>
 
       <Question>What's the dress code?</Question>
       <Answer>Anything you like</Answer>
       <AnswerBody>
-        <p>But hey, it's a wedding so you might fancy the opportunity to dress up posh... we do have a fancy photographer after all.</p>
+        <p>It's a party, go with your instincts.</p>
       </AnswerBody>
 
       <Question>What's for tea?</Question>

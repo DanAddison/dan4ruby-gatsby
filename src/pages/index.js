@@ -28,12 +28,12 @@ const IndexPage = () => (
 
     <Splashpage />
 
-      <Overlay>
+      {/* <Overlay>
         <Notice>
           <Heading fontSize={[8,9]} mb={2} mt={8}>Postponed <span role="img" aria-label="expletives">🤬</span></Heading>
           <p>See you in 2021?</p>
         </Notice>
-      </Overlay>
+      </Overlay> */}
 
   </Layout>
 )
