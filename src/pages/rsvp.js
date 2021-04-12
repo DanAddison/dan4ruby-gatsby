@@ -29,8 +29,8 @@ const RSVPPage = () => (
             <label htmlFor="attending[]">Will you be joining us?
               <select name="attending[]" required="required">
                 <option value="">-- select --</option>
-                <option value="yes">I will !!</option>
-                <option value="no">No, enough with this wedding already</option>
+                <option value="yes">Yes!</option>
+                <option value="no">Sorry, can't make it</option>
               </select>
             </label>
           </fieldset>

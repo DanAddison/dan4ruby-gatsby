@@ -57,20 +57,20 @@ const SecondPage = () => (
       <Question>Do I need to RSVP again?</Question>
       <Answer>Yes please!</Answer>
       <AnswerBody>
-        <p>It'll be a casual affair but it is nevertheless very helpful for us to know who is coming in advance. Head here to respond: <Link to={"rsvp"}>RSVP</Link></p>
+        <p>It'll be a smaller and more casual affair but it is nevertheless very helpful for us to know who is coming in advance. Head here to respond: <Link to={"rsvp"}>RSVP</Link></p>
       </AnswerBody>
 
       <Question>Where is it?</Question>
       <Answer>The Factory</Answer>
       <AnswerBody>
-        <p><a href="http://www.strangecargo.org.uk/">Strange Cargo</a> means a lot to both of us, so we’re thrilled to bits to be saying our vows there. Huge thanks to Brigitte for giving us free rein!</p>
+        <p><a href="http://www.strangecargo.org.uk/">Strange Cargo</a> means a lot to both of us, so we’re thrilled to celebrate with you there. Huge thanks to Brigitte for giving us free rein!</p>
         <p><a href="https://goo.gl/maps/r271nrvBTeWq8SAq7">View map</a></p>
       </AnswerBody>
 
       <Question>Can I park there?</Question>
       <Answer>No, sorry</Answer>
       <AnswerBody>
-        <p>There is no available parking at the factory, and the surrounding streets are usually chock-a-block.</p>
+        <p>There is no available parking at the factory, and the surrounding streets are often chock-a-block.</p>
       </AnswerBody>
 
       <Question>What time is it?</Question>
@@ -88,7 +88,7 @@ const SecondPage = () => (
       <Question>What's the dress code?</Question>
       <Answer>Anything you like</Answer>
       <AnswerBody>
-        <p>It's a party, go with your instincts.</p>
+        <p>It's a party, whatever makes you happy.</p>
       </AnswerBody>
 
       <Question>What's for tea?</Question>
@@ -100,8 +100,8 @@ const SecondPage = () => (
       <Question>What shall I bring?</Question>
       <Answer>A bottle</Answer>
       <AnswerBody>
-        <p>We'll be providing some bubbly, wine, beer and soft drinks, but your appetites will be far deeper than our pockets. We'll be stocking up our homemade bar with your contributions as you arrive. You'll also be able to drop booze off at the Factory on the day/evening before, if that's easier.</p>
-        <p>Just to reiterate, as this is arguably the most crucial piece of info on this site: <span>bring booze!!</span></p>
+        <p>We'll be providing some bubbly, wine, beer and soft drinks, but we'll also be stocking up our homemade bar with your contributions as you arrive. You'll be able to drop booze off at the Factory on the day/evening before, if that's easier.</p>
+        <p>Just to reiterate, <span>bring booze!!</span></p>
       </AnswerBody>
 
       <Question>Are we all going to fit inside the factory?</Question>
