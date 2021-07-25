@@ -51,7 +51,7 @@ const SecondPage = () => (
       <Question>First things first... Covid?</Question>
       <Answer>Yeah... please do a test</Answer>
       <AnswerBody>
-        <p>We think it's a fairly safe bet that the party will go ahead this time. We've scaled down the guest list quite a bit, but there won't be much social distancing going on in the modest factory space. As such we ask that you <em>do not attend without having done a negative lateral flow test</em> on the morning of the event. As most of you will know by now, it's quick, easy and cheap to get test packs sent to your home.</p>
+        <p>We think it's a fairly safe bet that the party will go ahead this time. We've scaled down the guest list quite a bit, but there won't be much social distancing going on in the modest factory space. As such we ask that you <em>do not attend without having done a negative lateral flow test</em> on the morning of the event. As most of you will know by now, it's quick, easy and free to get test packs sent to your home.</p>
         <p><a href="https://www.gov.uk/order-coronavirus-rapid-lateral-flow-tests" target="_blank" rel="noreferrer">Order a test kit</a></p>
       </AnswerBody>
 
@@ -70,8 +70,8 @@ const SecondPage = () => (
       <Question>Where is it?</Question>
       <Answer>The Factory</Answer>
       <AnswerBody>
-        <p><a href="http://www.strangecargo.org.uk/">Strange Cargo</a> means a lot to both of us, so we’re thrilled to celebrate with you there. Huge thanks to Brigitte for giving us free rein!</p>
-        <p><a href="https://goo.gl/maps/r271nrvBTeWq8SAq7">View map</a></p>
+        <p><a href="http://www.strangecargo.org.uk/" target="_blank" rel="noreferrer">Strange Cargo</a> means a lot to both of us, so we’re thrilled to celebrate with you there. Huge thanks to Brigitte for giving us free rein!</p>
+        <p><a href="https://goo.gl/maps/r271nrvBTeWq8SAq7" target="_blank" rel="noreferrer">View map</a></p>
       </AnswerBody>
 
       <Question>Can I park there?</Question>
