@@ -13,10 +13,7 @@
     "titleBar.inactiveForeground": "#e7e7e799",
     "statusBar.background": "#1b3792",
     "statusBarItem.hoverBackground": "#2347bd",
-    "statusBar.foreground": "#e7e7e7",
-    "panel.border": "#2347bd",
-    "sideBar.border": "#2347bd",
-    "editorGroup.border": "#2347bd"
-  },
+    "statusBar.foreground": "#e7e7e7"
+},
   "peacock.color": "#1b3792"
 }

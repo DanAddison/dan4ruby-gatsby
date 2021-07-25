@@ -48,6 +48,13 @@ const SecondPage = () => (
     <Article>
       <Heading>The belated wedding bash</Heading>
 
+      <Question>First things first... Covid?</Question>
+      <Answer>Yeah... please do a test</Answer>
+      <AnswerBody>
+        <p>We think it's a fairly safe bet that the party will go ahead this time. We've scaled down the guest list quite a bit, but there won't be much social distancing going on in the modest factory space. As such we ask that you <em>do not attend without having done a negative lateral flow test</em> on the morning of the event. As most of you will know by now, it's quick, easy and cheap to get test packs sent to your home.</p>
+        <p><a href="https://www.gov.uk/order-coronavirus-rapid-lateral-flow-tests" target="_blank" rel="noreferrer">Order a test kit</a></p>
+      </AnswerBody>
+
       <Question>When is it?</Question>
       <Answer>Saturday 4th September 2021</Answer>
       <AnswerBody>
@@ -74,21 +81,22 @@ const SecondPage = () => (
       </AnswerBody>
 
       <Question>What time is it?</Question>
-      <Answer>2pm maybe?</Answer>
+      <Answer>3pm</Answer>
       <AnswerBody>
-        <p>Keep an eye on this website close to the time, as we'll update it with any details as they become clearer. But you can expect something like this:</p>
+        <p>You can expect something like this:</p>
         <List>
-          <li>Arrive between 1-1:45pm</li>
-          <li>Suspend disbelief for our long-awaited wedding ceremony at 2pm</li>
-          <li>Eat and drink and mingle for a few hours</li>
-          <li>Have a boogie until 11pm</li>
+          <li>Arrive between 2:30-2:45pm</li>
+          <li>Some sort of low-key wedding ceremony at 3pm</li>
+          <li>Eat and drink and mingle for a while</li>
+          <li>Have a boogie</li>
+          <li>11pm curfew (it's a quiet residential street)</li>
         </List>
       </AnswerBody>
 
       <Question>What's the dress code?</Question>
       <Answer>Anything you like</Answer>
       <AnswerBody>
-        <p>It's a party, whatever makes you happy.</p>
+        <p>It's just a party, whatever makes you happy.</p>
       </AnswerBody>
 
       <Question>What's for tea?</Question>
@@ -101,13 +109,6 @@ const SecondPage = () => (
       <Answer>A bottle</Answer>
       <AnswerBody>
         <p>We'll be providing some bubbly, wine, beer and soft drinks, but we'll also be stocking up our homemade bar with your contributions as you arrive. You'll be able to drop booze off at the Factory on the day/evening before, if that's easier.</p>
-        <p>Just to reiterate, <span>bring booze!!</span></p>
-      </AnswerBody>
-
-      <Question>Are we all going to fit inside the factory?</Question>
-      <Answer>Good question</Answer>
-      <AnswerBody>
-        <p>It's gonna get cosy! Luckily we're all friends.</p>
       </AnswerBody>
 
     </Article>
