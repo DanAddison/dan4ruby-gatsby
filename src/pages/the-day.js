@@ -49,10 +49,10 @@ const SecondPage = () => (
       <Heading>The belated wedding bash</Heading>
 
       <Question>First things first... Covid?</Question>
-      <Answer>Yeah... please do a test</Answer>
+      <Answer>Yeah... please do a test!</Answer>
       <AnswerBody>
-        <p>We think it's a fairly safe bet that the party will go ahead this time. We've scaled down the guest list quite a bit, but there won't be much social distancing going on in the modest factory space. As such we ask that you <em>do not attend without having done a negative lateral flow test</em> on the morning of the event. As most of you will know by now, it's quick, easy and free to get test packs sent to your home.</p>
-        <p><a href="https://www.gov.uk/order-coronavirus-rapid-lateral-flow-tests" target="_blank" rel="noreferrer">Order a test kit</a></p>
+        <p>We've scaled down the guest list quite a bit, but there won't be much social distancing going on in the modest factory space. As such we ask that you <em>please do not attend without having done a negative lateral flow test</em> on the morning of the event. We'll all feel more relaxed for it. As you will know by now, it's quick, easy and free to get test packs sent to your home.</p>
+        <p><a href="https://www.gov.uk/order-coronavirus-rapid-lateral-flow-tests" target="_blank" rel="noopener noreferrer">Order a test kit</a></p>
       </AnswerBody>
 
       <Question>When is it?</Question>
@@ -62,7 +62,7 @@ const SecondPage = () => (
       </AnswerBody>
 
       <Question>Do I need to RSVP again?</Question>
-      <Answer>Yes please!</Answer>
+      <Answer>Yes please</Answer>
       <AnswerBody>
         <p>It'll be a smaller and more casual affair but it is nevertheless very helpful for us to know who is coming in advance. Head here to respond: <Link to={"rsvp"}>RSVP</Link></p>
       </AnswerBody>
@@ -70,8 +70,8 @@ const SecondPage = () => (
       <Question>Where is it?</Question>
       <Answer>The Factory</Answer>
       <AnswerBody>
-        <p><a href="http://www.strangecargo.org.uk/" target="_blank" rel="noreferrer">Strange Cargo</a> means a lot to both of us, so we’re thrilled to celebrate with you there. Huge thanks to Brigitte for giving us free rein!</p>
-        <p><a href="https://goo.gl/maps/r271nrvBTeWq8SAq7" target="_blank" rel="noreferrer">View map</a></p>
+        <p><a href="http://www.strangecargo.org.uk/" target="_blank" rel="noopener noreferrer">Strange Cargo</a> means a lot to both of us, so we’re thrilled to celebrate with you there. Huge thanks to Brigitte for giving us free rein!</p>
+        <p><a href="https://goo.gl/maps/r271nrvBTeWq8SAq7" target="_blank" rel="noopener noreferrer">View map</a></p>
       </AnswerBody>
 
       <Question>Can I park there?</Question>
@@ -96,7 +96,7 @@ const SecondPage = () => (
       <Question>What's the dress code?</Question>
       <Answer>Anything you like</Answer>
       <AnswerBody>
-        <p>It's just a party, whatever makes you happy.</p>
+        <p>It's a party, whatever makes you happy.</p>
       </AnswerBody>
 
       <Question>What's for tea?</Question>
@@ -108,7 +108,7 @@ const SecondPage = () => (
       <Question>What shall I bring?</Question>
       <Answer>A bottle</Answer>
       <AnswerBody>
-        <p>We'll be providing some bubbly, wine, beer and soft drinks, but we'll also be stocking up our homemade bar with your contributions as you arrive. You'll be able to drop booze off at the Factory on the day/evening before, if that's easier.</p>
+        <p>We'll be providing some bubbly, wine, beer and soft drinks, but it would be great if you could bring some kind of beverage too. We're hoping to stock up a homemade bar with your contributions as you arrive!</p>
       </AnswerBody>
 
     </Article>
