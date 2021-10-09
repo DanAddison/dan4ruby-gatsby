@@ -9,7 +9,7 @@
 
 A static site based on Gatsby's default starter.
 
-## Required
-
-- `node v12.10.0 (npm v6.14.6)`
-- uses a local version of Gatsby CLI (I installed project using npx before I had Gatsby CLI globally)
+I've added:
+- Styled Components
+- Styled System
+- React Icons

@@ -8,10 +8,10 @@ const RSVPPage = () => (
       <p>If you haven't yet completed this form since we rescheduled to September 2021, please do so!</p>
 
       <Form
-        name="rsvp_sept_2021"
-        method="POST"
-        netlify-honeypot="bot-field"
-        data-netlify="true"
+        // name="rsvp_sept_2021"
+        // method="POST"
+        // netlify-honeypot="bot-field"
+        // data-netlify="true"
       >
         <div className="visuallyHidden">
           <label htmlFor="bot-field">Don’t fill this out if you're human:</label>
