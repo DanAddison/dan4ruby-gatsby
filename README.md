@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://dan4ruby.netlify.app/">
+  <a href="https://wedding.danaddison.uk">
     <img alt="Gatsby" src="src/images/Dan4Ruby-screenshot.jpg" width="800" />
   </a>
 </p>
